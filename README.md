@@ -1,0 +1,2 @@
+# dokumrnt
+contoh dokument smk 
