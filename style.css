@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+nav h2{
+    color:#00f7ff;
+    letter-spacing:1px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav ul li{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+nav ul li:hover{
+    color:#00f7ff;
+    transform:scale(1.1);
+}
+
+/* HEADER */
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:120px 20px 40px;
+}
+
+/* LOGO BARU BIAR PAS */
+.logo{
+    width:260px;          /* ukuran utama */
+    max-width:90%;        /* biar responsive */
+    aspect-ratio:1/1;     /* biar tetap kotak */
+    object-fit:contain;   /* penting supaya tidak kepotong */
+    display:block;
+    margin:0 auto 30px;
+    
+    padding:15px;
+    background:rgba(255,255,255,0.05);
+    border-radius:30px;
+    
+    box-shadow:0 0 40px rgba(0,255,150,0.5);
+    transition:0.4s ease;
+}
+
+.logo:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 70px #00ffcc;
+}
+
+.logo:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 60px #00f7ff;
+}
+
+header h1{
+    font-size:45px;
+    color:white;
+    text-shadow:0 0 20px #00f7ff;
+    margin-bottom:15px;
+}
+
+header p{
+    max-width:650px;
+    opacity:0.9;
+}
+
+/* BUTTON */
+button{
+    margin-top:25px;
+    padding:12px 28px;
+    border:none;
+    background:#00f7ff;
+    color:black;
+    font-weight:bold;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:white;
+    transform:scale(1.05);
+}
+
+/* SECTION */
+section{
+    padding:100px 40px;
+    text-align:center;
+}
+
+section h2{
+    margin-bottom:30px;
+    color:#00f7ff;
+}
+
+/* CARD */
+.card-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.card{
+    width:280px;
+    padding:30px;
+    border-radius:20px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(8px);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 0 25px #00f7ff;
+}
+
+/* CYBER LOGO */
+.cyber-logo{
+    margin-top:30px;
+    width:160px;
+    margin-left:auto;
+    margin-right:auto;
+    animation:spin 8s linear infinite;
+}
+
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+/* FOOTER */
+footer{
+    background:black;
+    padding:25px;
+    text-align:center;
+    font-size:14px;
+    letter-spacing:1px;
+}.popup{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    animation:fade 0.3s ease;
+    z-index:2000;
+}
+
+.popup-box{
+    background:#111;
+    padding:35px;
+    width:90%;
+    max-width:420px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:0 0 40px #00f7ff;
+}
+
+.popup-box h2{
+    color:#00f7ff;
+    margin-bottom:15px;
+}
+
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding-top:100px;
+}
+@media(max-width:768px){
+    .logo{
+        width:180px;
+    }
+}

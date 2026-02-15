@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK TKJ - Teknik Komputer & Jaringan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>SMK TKJ</h2>
+    <ul>
+        <li onclick="scrollToSection('tentang')">Tentang</li>
+        <li onclick="scrollToSection('materi')">Materi</li>
+        <li onclick="scrollToSection('cyber')">Cyber</li>
+    </ul>
+</nav>
+
+<header>
+    <!-- GANTI logo.png dengan logo sekolah kamu -->
+    <img src="logo smk.jpeg" alt="SMK TKJ school logo featuring the institution name and emblem, representing Teknik Komputer & Jaringan vocational program" class="logo">
+    <h1>Teknik Komputer & Jaringan</h1>
+    <p>Jurusan yang mempelajari jaringan komputer, server, keamanan sistem, serta teknologi IT modern.</p>
+    <button onclick="showInfo()">Kenapa Harus TKJ?</button>
+</header>
+
+<section id="tentang">
+    <h2>Tentang Jurusan TKJ</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Jaringan</h3>
+            <p>Belajar LAN, WAN, Mikrotik, Routing & Switching.</p>
+        </div>
+        <div class="card">
+            <h3>Hardware</h3>
+            <p>Perakitan komputer & troubleshooting.</p>
+        </div>
+        <div class="card">
+            <h3>Programming</h3>
+            <p>HTML, CSS, JavaScript dan dasar coding.</p>
+        </div>
+    </div>
+</section>
+
+<section id="materi">
+    <h2>Kompetensi Keahlian</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Administrasi Server</h3>
+            <p>Linux, Windows Server, Virtual Machine.</p>
+        </div>
+        <div class="card">
+            <h3>Keamanan Jaringan</h3>
+            <p>Firewall, VPN, IDS & Monitoring.</p>
+        </div>
+        <div class="card">
+            <h3>Cloud & IoT</h3>
+            <p>Teknologi berbasis internet modern.</p>
+        </div>
+    </div>
+</section>
+
+<section id="cyber">
+    <h2>Cyber Security</h2>
+    <p>Cyber Security adalah perlindungan sistem dan jaringan dari serangan digital.</p>
+
+    <!-- Logo Cyber Security SVG -->
+    <div class="cyber-logo">
+        <svg viewBox="0 0 200 200">
+            <polygon points="100,10 180,50 160,150 100,190 40,150 20,50"
+            fill="none" stroke="#00f7ff" stroke-width="4"/>
+            <text x="50%" y="55%" text-anchor="middle" fill="#00f7ff" font-size="40" font-weight="bold">CS</text>
+        </svg>
+    </div>
+</section>
+
+<footer>
+    Â© 2026 SMK TKJ | Cyber Generation
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
